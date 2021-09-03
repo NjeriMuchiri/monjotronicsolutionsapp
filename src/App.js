@@ -14,21 +14,21 @@ return(
    <Router>
 	   <Navbar/>
 	<Switch>
-		<Route path="/Home" exact component={Home} />
-		<Route path="/Networking" exact component={Networking} />
-        <Route path="/networking/lanwlan" exact component={LanWlan} /> 
-		<Route path="/networking/structuredcabling" exact component={StructuredCabling} />
-		<Route path="/security" exact component={Security} />
-		<Route path="/security/cctv" exact component={Cctv} />
-		<Route path="/security/accesscontrol"  exact component={AccessControl} />
-		<Route path="/security/electricfence" exact component={ElectricFence} />
-		<Route path="/security/cleanpowerinstallation" exact  component={CleanPowerInstallation} />
-		<Route path="/serviceandmaintenance" exact  component={Serviceandmaintenance} />
-		<Route path="/serviceandmaintenance/ICTEquipment" exact component={ICTEquipment} />
-		<Route path="/serviceandmaintenance/preventivemaintenance" exact component={PreventiveMaintenance} />
-        <Route path="/serviceandmaintenance/service" exact component={Service} />
-		<Route path="/aboutus" exact component={AboutUs} />
-        <Route path="/contactus" exact component={ContactUs} />
+		<Route path="/" exact component={Home} />
+		<Route path="/Networking"  component={Networking} />
+        <Route path="/networking/lanwlan"  component={LanWlan} /> 
+		<Route path="/networking/structuredcabling"  component={StructuredCabling} />
+		<Route path="/security"  component={Security} />
+		<Route path="/security/cctv"  component={Cctv} />
+		<Route path="/security/accesscontrol"  component={AccessControl} />
+		<Route path="/security/electricfence"  component={ElectricFence} />
+		<Route path="/security/cleanpowerinstallation"  component={CleanPowerInstallation} />
+		<Route path="/serviceandmaintenance"  component={Serviceandmaintenance} />
+		<Route path="/serviceandmaintenance/ICTEquipment"  component={ICTEquipment} />
+		<Route path="/serviceandmaintenance/preventivemaintenance"  component={PreventiveMaintenance} />
+        <Route path="/serviceandmaintenance/service" component={Service} />
+		<Route path="/aboutus" component={AboutUs} />
+        <Route path="/contactus" component={ContactUs} />
 	</Switch>
 	</Router>
 );
