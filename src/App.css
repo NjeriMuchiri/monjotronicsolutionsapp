@@ -20,5 +20,12 @@ h2{
     margin: auto;
     padding: auto;
 }
+h3{
+    color:#ffae00 !important;
+    font-weight: bold !important;
+}
+p{
+    color:white !important;
+}
 
 
