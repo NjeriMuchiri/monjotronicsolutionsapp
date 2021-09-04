@@ -1,5 +1,11 @@
+.dropdown-item{
+    font-size:17px !important;
+}
 .dropdown-item:hover{
     background: #ffae00 !important;
+}
+.nav-link{
+    font-size:18px !important;
 }
 .nav-link:hover{
     color:#ffae00 !important;
@@ -8,5 +14,11 @@
     outline: none !important;
 }
 
+h2{
+    justify-content: center;
+    text-align:center;
+    margin: auto;
+    padding: auto;
+}
 
 

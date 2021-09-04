@@ -1,5 +1,4 @@
-import "./App.css"
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import { BrowserRouter as Router, Switch, Route} from "react-router-dom";
 import Home from "./pages/Home";
 import {Networking, LanWlan,StructuredCabling} from "./pages/Networking" ;                                        
 import { Security,Cctv,AccessControl, ElectricFence,CleanPowerInstallation} from "./pages/Security";
@@ -7,16 +6,17 @@ import{Serviceandmaintenance,ICTEquipment,PreventiveMaintenance,Service} from ".
 import ContactUs from "./pages/ContactUs";
 import AboutUs from "./pages/AboutUs";
 
-import Navbar from "./components/Navbar";
+import Navigationbar from "./components/Navbar";
 
 function App() {
 return(
+	
    <Router>
-	   <Navbar/>
+	   <Navigationbar />
 	<Switch>
-		<Route path="/" exact component={Home} />
-		<Route path="/Networking"  component={Networking} />
-        <Route path="/networking/lanwlan"  component={LanWlan} /> 
+		<Route path="/home" exact component={Home} />
+		<Route path="/Networking" component={Networking}/>
+        <Route path="/networking/lanwlan"  component={LanWlan} />
 		<Route path="/networking/structuredcabling"  component={StructuredCabling} />
 		<Route path="/security"  component={Security} />
 		<Route path="/security/cctv"  component={Cctv} />
@@ -29,10 +29,11 @@ return(
         <Route path="/serviceandmaintenance/service" component={Service} />
 		<Route path="/aboutus" component={AboutUs} />
         <Route path="/contactus" component={ContactUs} />
+		
 	</Switch>
 	</Router>
+
 );
-}
+};
 
 export default App;
-

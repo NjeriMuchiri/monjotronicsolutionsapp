@@ -1,11 +1,11 @@
 import React from 'react';
-
+import structuredcabling from '../images/cabling.jpg';
 
 const Home = () =>{
     return(
     <>
         <div>
-            <h2>Welcome to monjotronic solutions</h2>
+         <img src={structuredcabling} alt="cables structured" />
         </div>
 
         </>
