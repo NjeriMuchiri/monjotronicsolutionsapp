@@ -14,7 +14,7 @@ function SLiderCarousel(){
 
     return(
         <Carousel fade>
-  <Carousel.Item Interval={1000}>
+  <Carousel.Item>
     <img
       src={cabling}
       className="d-block w-100"
@@ -36,7 +36,7 @@ function SLiderCarousel(){
       <p>We offer great internet services.</p>
     </Carousel.Caption>
   </Carousel.Item>
-  <Carousel.Item Interval={500}>
+  <Carousel.Item>
     <img
       className="d-block w-100"
       src={maintenance}

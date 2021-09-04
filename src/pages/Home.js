@@ -7,6 +7,9 @@ const Home = () =>{
         <div>
           <SliderCarousel/>
         </div>
+        <div>
+            
+        </div>
 
         </>
     );
