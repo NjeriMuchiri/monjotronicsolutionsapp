@@ -1,4 +1,5 @@
 import React from 'react';
+import MidContainer from '../components/midcontainer';
 import SliderCarousel from '../components/slider';
 
 const Home = () =>{
@@ -8,7 +9,7 @@ const Home = () =>{
           <SliderCarousel/>
         </div>
         <div>
-            
+            <MidContainer/>
         </div>
 
         </>
