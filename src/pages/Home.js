@@ -10,8 +10,7 @@ const Home = () =>{
         </div>
         <div>
             <MidContainer/>
-        </div>
-
+          </div>
         </>
     );
 };
