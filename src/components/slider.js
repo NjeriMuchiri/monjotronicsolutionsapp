@@ -22,7 +22,7 @@ function SLiderCarousel(){
     />
     <Carousel.Caption>
       <h3>Structured Cabling.</h3>
-      <p>We do management and structuring of the cables in an organized way.</p>
+      <p>Management and cables organization.</p>
     </Carousel.Caption>
   </Carousel.Item>
   <Carousel.Item>

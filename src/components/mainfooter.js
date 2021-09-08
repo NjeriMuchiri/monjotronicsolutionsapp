@@ -3,9 +3,11 @@ import '../App.css';
 import {FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faPhone,faEnvelope, faMapMarkedAlt} from '@fortawesome/free-solid-svg-icons';
 import {faFacebook,faInstagram,faWhatsapp} from '@fortawesome/free-brands-svg-icons'
+import Form from './formvalidate'
 
 
 const MainFooter=()=>{
+
     return(
         <>
         <footer>
@@ -42,40 +44,11 @@ const MainFooter=()=>{
                   <li><a href="/Serviceandmaintenance/service">Service.</a></li>
                   <li><a href="/Networking/lanwlan">Infrastructure.</a></li>
                   <li><a href="/aboutus">AboutUs.</a></li>
-                  <li><a href="/contactus">Contact.</a></li>
+                  <li><a href="/contactus">Contactus.</a></li>
     
                  </ul>
              </div>
-             <div className="section quotation">
-                <h4>Get a <span>Quotation!</span></h4>
-                <br />
-                <form id = "form">
-                    <label for = "quotation">Description:</label>
-                    <select id="quotation" name="get a quotation">
-                      <option value="Maintenance">PreventiveMaintenance</option>
-                      <option value="Service">Service</option>
-                      <option value="Networking">WLAN | LAN Infrastructure</option>
-                      <option value="Security">CCTV installation</option>
-                      <option value="Security">ElectricFenceInstallation</option>
-                      <option value="Cabling">StructuredCabling</option>
-                      <option value="Access">AccessControl</option>
-                      <option value="PowerInstallation">CleanPowerInstallation</option>
-                      <option value="Equipment">ICTEquipment</option>
-                      <option value="Repair">ComputerRepair</option>
-                      <option value="ComputerMaintenance">ComputerMaintenance</option>
-                      </select>
-                    <br />
-               <input type="email" name="email" id = "email" class="text_input" required placeholder="Your Email Adress..." />
-               <br />
-              <input type="phonenumber" name="phonenumber" id ="phonenumber" class="text_input" required placeholder="PhoneNumber" />
-              <br />
-              <textarea name="message" id="message" class="text_input" required placeholder="Your Message..."></textarea>
-              <br />
-              <input type="submit" class="contact-in-btn" value="submit"/>
-          </form>
-                
-
-             </div>
+                <Form />
            </div>
         </section>
            </footer>
