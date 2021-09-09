@@ -41,18 +41,21 @@ export class Form extends Component{
     validate = () =>{
 
              let emailError='';
-            // let phonenumberError='';
+            let phonenumberError='';
              let messageError='';
 
         if(!this.state.message){
             messageError = "message cannot be blank";
         }
+        if(!this.state.phonenumber >= 15){
+            phonenumberError = "invalid phone number";
+        }
 
         if(!this.state.email.includes("@")){
             emailError="invalid email";
         }
-        if(emailError || messageError){
-            this.setState({emailError,messageError});
+        if(emailError || messageError || phonenumberError){
+            this.setState({emailError,messageError,phonenumberError});
             return false;
         }
         return true;
@@ -74,7 +77,7 @@ export class Form extends Component{
     render(){
         const{email,phonenumber,message,description} = this.state
         return(
-            <form onSubmit={this.handleSubmit}>
+            <form>
                  <div className="section quotation">
                      <h4>Get a Quotation.</h4>
                     <label>Description:</label>
@@ -123,7 +126,7 @@ export class Form extends Component{
                      </div>
 
                 
-                <button type="submit" className="contact-in-btn">Submit</button>
+                <button type="submit" className="contact-in-btn" onClick={this.handleSubmit}>Submit</button>
                 </div>
             </form>
         )

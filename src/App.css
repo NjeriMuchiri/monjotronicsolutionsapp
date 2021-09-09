@@ -1,3 +1,4 @@
+/*navbar styling*/
 .dropdown-item{
     font-size:17px !important;
 }
@@ -27,6 +28,7 @@ h3{
 p{
     color:#bfbdc1 !important;
 }
+/*end of navbar styling*/
 
 /*midcontainer logo section */
 
@@ -237,7 +239,7 @@ p{
           color: #ccc;
       }
      .selected{
-         margin-bottom:10px;
+         margin-bottom:20px;
          outline:none !important;
      }
       .text_input {
@@ -329,7 +331,345 @@ p{
           }
 
       }
-
-
-
 /*End of footer styling*/
+
+/*contact us styling*/
+.contact-info {
+    height: 100vh;
+    display: grid;
+    align-items: center;
+}
+
+.contact-wrap {
+    width: 80%;
+    height: auto;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+    margin-bottom: 40px;
+
+}
+
+.contact-in {
+    padding: 40px 30px;
+}
+
+.contact-in:nth-child(1){
+    flex: 30%;
+    background: url('./images/contact.jpeg');
+    color: #fff;
+
+}
+
+.contact-in:nth-child(2) {
+    flex: 45%;
+    background: #f39c12;
+}
+
+.contact-in:nth-child(3) {
+    flex: 25%;
+    padding: 0;
+}
+
+.contact-in h1 {
+    font-size: 24px;
+    color: #fff;
+    text-transform: uppercase;
+    font-weight: 500;
+    margin-bottom: 20px;
+
+}
+
+.contact-in h2 {
+    font-size: 20px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.contact-in h2 i {
+    font-size: 16px;
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    background: #f5f5f5;
+    color: #000;
+    border-radius: 50px;
+    line-height: 40px;
+    text-align: center;
+}
+
+.contact-in .contact-abt {
+    font-size: 17px;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.contact-in .contact-abt a {
+    color: #fff !important;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.contact-in ul {
+    padding: 0;
+    margin: 0;
+}
+
+.contact-in ul li {
+    list-style: none;
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 5px;
+
+}
+
+.contact-in ul li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    background: #fff;
+    border-radius: 50px;
+}
+
+.contact-in ul li a i {
+    font-size: 20px;
+    line-height: 30px;
+    color: #000;
+}
+
+.contact-in ul li a i:hover {
+    color: #e67e22;
+    -webkit-transition: all 0.2s ease;
+    -o-transition: all 0.2s ease;
+    -moz-transition: all 0.2s ease;
+    transition: all 0.2s ease;
+}
+
+.contact-in form {
+    width: 100%;
+    height: auto;
+}
+
+.contact-in-input {
+    width: 100%;
+    height: 40px;
+    margin-bottom: 20px;
+    border: 1px solid #FFF;
+    outline: none;
+    padding-left: 5px;
+    background: transparent;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'kumbh Sans', sans-serif;
+}
+
+.contact-in-input::placeholder {
+    color: #fff;
+}
+
+input:focus {
+    color: black;
+    font-size: 18px;
+}
+
+.contact-in-textarea {
+    width: 100%;
+    height: 140px;
+    margin-bottom: 20px;
+    border: 1px solid #FFF;
+    outline: none;
+    padding-top: 5px;
+    padding-left: 5px;
+    background: transparent;
+    color: #fff;
+    font-size: 13px;
+    font-weight: 300;
+    font-family: 'kumbh Sans', sans-serif;
+}
+
+.contact-in-textarea::placeholder {
+    color: #fff;
+}
+
+.contact-in-btn {
+    width: 100%;
+    height: 40px;
+    border: 1px solid #FFF;
+    outline: none;
+    background: transparent;
+    color: #FFF;
+    font-size: 12px;
+    font-weight: 700;
+    font-family: 'kumbh Sans', sans-serif;
+    cursor: pointer;
+    -webkit-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    transition: all 0.3s ease;
+}
+
+
+.contact-in-btn:hover,
+.contact-in-btn:focus {
+    background-color: #d35400;
+}
+
+.contact-in iframe {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width:480px) {
+    .contact-in:nth-child(1) {
+        flex: 50%;
+
+    }
+
+    .contact-in:nth-child(2) {
+        flex: 50%;
+
+    }
+
+    .contact-in:nth-child(3) {
+        flex: 100%;
+
+    }
+}
+
+@media only screen and (max-width:360px) {
+    .contact-in:nth-child(1) {
+        flex: 50%;
+
+    }
+
+    .contact-in:nth-child(2) {
+        flex: 50%;
+
+    }
+
+    .contact-in:nth-child(3) {
+        flex: 100%;
+
+    }
+}
+
+/*End of contact us styling*/
+body{
+   max-width:100%;
+}
+.main-container{
+    width:100%;
+    min-height: 100vh;
+    padding-top:40px;
+    margin-bottom: 40px;
+}
+.main-container .title{
+    font-size:26px;
+    color:#141414;
+    line-height:1.6;
+    text-transform: uppercase;
+    font-weight: 900;
+    margin-bottom:30px;
+    margin-left:40px;
+}
+.main-container .title::after {
+    content: "";
+    width: 90px;
+    height: 5px;
+    background-color: #ff9f1c;
+    border-radius: 5px;
+    display: block;
+}
+#wrapper{
+    margin:40px 40px;
+}
+.about-content{
+    width:50%;
+    float:left;
+    text-align:left ;
+}
+.about-content #header-abt{
+    color:#f39c12;
+    font-size:20px;
+    font-style:oblique;
+    font-weight:500;
+    line-height: 1.6;
+    letter-spacing: .6px;
+}
+.about-content #header-us{
+    color:#9d9d9d;
+    letter-spacing: .5px;
+    line-height:1.6;
+    font-size:1.2em;
+}
+.about-content ul{
+    list-style: none;
+    margin-top:10px;
+    line-height:1.6;
+}
+.about-content ul li .icon{
+     margin-right:8px;
+     color:#ffae00;
+}
+.about-content .button{
+    width:100%;
+    margin-top:20px;
+    margin-bottom:25px;
+}
+
+.about-content .button a{
+       color:#fff;
+       background-color: #e67e22;
+       padding:12px 35px;
+       text-decoration: none;
+       letter-spacing: 1px;
+       font-size:17px;
+       -webkit-transition: all .7s ease;
+       -o-transition:all .7s ease;
+       -moz-transition:all .7s ease;
+       transition:all .7s ease;
+       }
+
+.about-content .button a:hover {
+           color:#222;
+       }
+.image-section{
+    width:45%;
+    float:right;
+}
+.image-section img{
+    max-width:100%;
+    height:auto;
+}
+
+@media screen and (max-width:960px) {
+    .main-container{
+        max-width:100%;
+    }
+    .about-content{
+        width:100%;
+        float:none;
+    }
+    .about-content .button {
+        margin-top: 40px;
+        text-align: center;
+    }
+    .about-content .button a {
+        padding: 8px 25px;
+    }
+    .image-section {
+        width: 100%;
+        float: none;
+        margin-top: 30px;
+    }
+    .image-section img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+ /*end of about us styling*/
+
