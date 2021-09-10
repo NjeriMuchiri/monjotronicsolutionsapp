@@ -37,7 +37,7 @@ const MainFooter=()=>{
              </ul>
              </div>
              <div className="section quicklinks">
-                 <h4>Our <span>Products</span></h4>
+                 <h4>Our <span>Services.</span></h4>
                  <ul>
                   <li><a href="/Serviceandmaintenance/preventivemaintenance">Maintenance.</a></li>
                   <li><a href="/Security/cctv">Security.</a></li>

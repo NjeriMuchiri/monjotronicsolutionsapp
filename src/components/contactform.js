@@ -71,7 +71,7 @@ export class ContactForm extends Component{
     render(){
         const{email,fullname,message} = this.state
         return(
-            <form>
+            <form onSubmit={this.handleSubmit}>
                    <input type="text"
                      value={fullname}
                      placeholder="fullname"

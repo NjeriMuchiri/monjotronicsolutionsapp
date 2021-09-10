@@ -77,7 +77,7 @@ export class Form extends Component{
     render(){
         const{email,phonenumber,message,description} = this.state
         return(
-            <form>
+            <form onSubmit={this.handleSubmit}>
                  <div className="section quotation">
                      <h4>Get a Quotation.</h4>
                     <label>Description:</label>
