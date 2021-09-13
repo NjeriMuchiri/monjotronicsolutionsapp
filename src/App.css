@@ -673,3 +673,13 @@ body{
 
  /*end of about us styling*/
 
+    /*Lan styling*/
+    .lan-container{
+        width:100%;
+        padding-top:40px;
+    }
+   
+    @media screen and (max-width:960px){
+        
+    }
+    /*end of lan styling*/

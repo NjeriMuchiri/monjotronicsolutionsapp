@@ -20,7 +20,7 @@ const Navigationbar = () =>{
         <Nav.Link href="/Home">< FontAwesomeIcon icon={faHome}/> &nbsp;Home</Nav.Link>
 
            <NavDropdown href="/Networking" title="Networking" id="basic-nav-dropdown">
-          <NavDropdown.Item href="/Networking/LanWlan">LanWlan</NavDropdown.Item>
+          <NavDropdown.Item href="/Networking/LanWlan/">LanWlan</NavDropdown.Item>
           <NavDropdown.Item href="/Networking/StructuredCabling">StructuredCabling</NavDropdown.Item>
         </NavDropdown>
          <NavDropdown title="Security" id="basic-nav-dropdown">

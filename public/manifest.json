@@ -1,7 +1,17 @@
+import icon192 from "./images/icon.png";
+import icon512 from "./images/icon.png"
+
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
-   "icons":[],
+  "short_name": "Monjotronic App",
+  "name": "Web React App",
+   "icons":[
+     {
+       src:icon192,
+       sizes:"192 by 192"
+     },
+     src:icon512,
+     sizes:"512 by 512"
+   ],
    
   "start_url": ".",
   "display": "standalone",
