@@ -5,18 +5,14 @@ import {faWifi, faCircleNotch,faSpinner} from '@fortawesome/free-solid-svg-icons
 import lanet from "../images/lanet.jpg";
 
 
-
- export const Networking=()=>{
-    return(
-        <>
-        <LanWlan />
-       </>
- )
- };
-
- export const LanWlan = () =>{
-    return(
-        <>
+export const Networking=()=>{
+      return(
+            <h4>Offering networking services</h4>
+      )
+}
+export const LanWlan=()=>{
+      return(
+           <>
         <div className="lan-container">
             <div id="lan-title">
                    <h1> WirelessLan</h1>
@@ -50,15 +46,13 @@ import lanet from "../images/lanet.jpg";
 
         </div>
         </>
-    );
+      );
 };
-
-export const StructuredCabling = () =>{
-    return(
-        <div>
-            <h2>structured cabling available</h2>
-        </div>
-    )
-};
+export const StructuredCabling=()=>{
+        return(
+              <h2>Management of cables available.</h2>
+        )
+}
 
     
+
