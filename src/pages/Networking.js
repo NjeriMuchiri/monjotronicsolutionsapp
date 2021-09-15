@@ -3,6 +3,7 @@ import '../App.css';
 import {FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import {faWifi, faCircleNotch,faSpinner} from '@fortawesome/free-solid-svg-icons';
 import lanet from "../images/lanet.jpg";
+import MainFooter from '../components/mainfooter';
 
 
 export const Networking=()=>{
@@ -18,13 +19,13 @@ export const LanWlan=()=>{
                    <h1> WirelessLan</h1>
             </div>
             <div className="lan-content">
-                <h3 className="lan-header">We as Monjotronic Solutions offer great <span>Internet Services. 
+                <h4 className="lan-header">We as Monjotronic Solutions offer great <span>Internet Services, 
                 </span><br /> with an unrestricted movement within the coverage area.
-                </h3>
-                <p>
+                </h4>
+                <p stye={{color:'color:#181818'}}>
                     Here,we are well skilled and equipped enough<br/>
                     to plan,implement,maintain,support and troubleshoot end to end <br/>Local
-                    Area Network infrastructure.
+                    Area Network infrastructure.<br/>
                     We use a UTP(Unshielded Twisted Pair)CAT-6 which has a high performance <br/>
                     when it comes to indoor Networking hence minimal latency.<br/>
                     Our WLANs are modern and are based on the latest protocol <br/> standards of IEEE:802.11
@@ -45,6 +46,7 @@ export const LanWlan=()=>{
             </div>
 
         </div>
+        <MainFooter/>
         </>
       );
 };

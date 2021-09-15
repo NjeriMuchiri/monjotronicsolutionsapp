@@ -681,6 +681,67 @@ body{
     .lan-container{
         width:100%;
         padding-top:40px;
+        margin-bottom: 40px;
+    }
+    #lan-title{
+        font-size:26px;
+        color:#e67e22;
+        text-align:center;
+        line-height:1.6;
+        text-transform: initial;
+        font-weight: 700;
+        margin-bottom:20px;
+        margin-left:40px;
+    }
+    .lan-header{
+        text-align:center;
+        font-size:17px;
+        color:#222;
+        font-family:cursive;
+        line-height:1.6;
+        letter-spacing:.6px;
+
+    }
+    .lan-header span{
+        font-style: oblique;
+        color:#333;
+        font-size: 18px;
+    }
+    .lan-content p{
+        margin-left:20px;
+        font-size: 16px;
+        color:#181818;
+        line-height:1.6;
+        letter-spacing: .6px;
+         }
+
+         .lan-content ul {
+             list-style: none;
+             margin-top: 0px;
+             float: right;
+             line-height: 1.6;
+             margin-bottom: 30px;
+         }
+
+         .lan-content ul li i {
+             margin-right: 8px;
+             color: #f39c12;
+         }
+
+         .lan-content ul li span {
+             color: #343a40;
+             font-size: 15px;
+         }
+    
+    .image-part{
+        width:45%;
+        height:auto;
+    }
+    .image-part img{
+        width:100%;
+        height:auto;
+        margin-left:200px;
+        margin-top:120px;
     }
    
     @media screen and (max-width:960px){
