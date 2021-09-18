@@ -27,12 +27,14 @@ const ContactUs = () =>{
             <h2>< FontAwesomeIcon icon={faMapMarkedAlt}/> &nbsp;Address:</h2>
             <p className="contact-abt">Nairobi hardware complex,Wangige | Suite No.06</p>
             <ul>
-                <li><a href="https://www.facebook.com/search/top/?q=monjotronic%20solutions">
-                    <FontAwesomeIcon icon={faFacebook}style={{color:"#000"}}/></a></li>
-                <li><a href="https://www.instagram.com/monjotronics/">
-                    <FontAwesomeIcon icon={faInstagram}style={{color:"#000"}}/></a></li>
-                <li><a href="https://wa.me/254734139465">
-                    <FontAwesomeIcon icon={faWhatsapp}style={{color:"#000"}}/></a></li>
+                <li><a href="https://www.facebook.com/search/top/?q=monjotronic%20solutions" target="_blank" rel='noreferrer noopener'>
+                    <FontAwesomeIcon className="s-icon" icon={faFacebook}/></a></li>
+                <li><a href="https://www.instagram.com/monjotronics/"
+                target="_blank" rel='noreferrer noopener'>
+                    <FontAwesomeIcon className="s-icon" icon={faInstagram}/></a></li>
+                <li><a href="https://wa.me/254734139465"
+                target="_blank" rel='noreferrer noopener'>
+                    <FontAwesomeIcon className="s-icon" icon={faWhatsapp}/></a></li>
             </ul>
         </div>
             <div class="contact-in" >

@@ -27,11 +27,13 @@ const MainFooter=()=>{
                  <p>Nairobi hardware complex,Wangige | Suite No.6. </p>
     
                  <ul class="social-icons">
-                    <li><a href="https://www.facebook.com/search/top/?q=monjotronic%20solutions">
+                    <li><a href="https://www.facebook.com/search/top/?q=monjotronic%20solutions" target="_blank" rel='noreferrer noopener'>
                         <FontAwesomeIcon icon={faFacebook}style={{color:"#fff"}}/></a></li>
-                    <li><a href="https://www.instagram.com/monjotronics/">
+                    <li><a href="https://www.instagram.com/monjotronics/"
+                    target="_blank" rel='noreferrer noopener'>
                         <FontAwesomeIcon icon={faInstagram}style={{color:"#fff"}}/></a></li>
-                    <li><a href="https://wa.me/254734139465">
+                    <li><a href="https://wa.me/254734139465"
+                    target="_blank" rel='noreferrer noopener'>
                         <FontAwesomeIcon icon={faWhatsapp}style={{color:"#fff"}}/></a></li>
                     
              </ul>

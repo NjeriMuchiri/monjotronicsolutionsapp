@@ -76,7 +76,7 @@ export const AccessControl = () =>{
             <ul>
                 <li> -Apartment Video Phone</li>
             </ul>
-            <h5>Biometric Solutions</h5>
+            <h2>Biometric Solutions</h2>
             <ul>
                 <li> -Time Attendance</li>
             </ul>

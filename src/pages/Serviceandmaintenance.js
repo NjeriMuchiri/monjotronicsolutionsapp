@@ -3,7 +3,7 @@ import MainFooter from '../components/mainfooter';
 import equipment from '../images/ict.jpg';
 import servicing from '../images/servicing.jpg';
 import {FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faPhoneSquare,faCogs} from '@fortawesome/free-solid-svg-icons';
+import {faPhoneSquare,faWrench} from '@fortawesome/free-solid-svg-icons';
 import computer from '../images/computermaintenance.jpg';
 
 export const Serviceandmaintenance = () =>{
@@ -80,7 +80,7 @@ export const Service = () =>{
     return(
         <>
         <div class = "service-container">
-     <h2 class="service-title">Service < FontAwesomeIcon className="icon" icon={faCogs}/>
+     <h2 class="service-title">Service < FontAwesomeIcon className="icon" icon={faWrench}/>
      </h2>
      <div class="image_part">
          <img src={servicing} alt="key illustrating service" />
