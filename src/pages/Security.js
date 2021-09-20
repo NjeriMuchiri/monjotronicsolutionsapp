@@ -12,7 +12,7 @@ import fence from '../images/electricFence.jpg';
 import fencing from '../images/fence3.jpeg';
 import electric from '../images/electricfence1.jpg';
 import videodoor from '../images/videodoor.jpg';
-import panel from '../images/offgridsolar.jpg';
+import solar from '../images/solar.jpg';
 import '../App.css';
 
 
@@ -145,7 +145,41 @@ export const ElectricFence = () =>{
 export const CleanPowerInstallation = () =>{
     return(
         <>
-      
+       <header className="clean-div">
+         <div className="clean-banner">
+             <h2 className="clean-title">SolarPanelInstallation.</h2>
+         </div>
+       </header>
+        <section className="clean">
+            <div className="clean-section clearfix">
+           <article className="clean-info">
+               <div className="clean-subtitle">
+               <h4>CleanPowerInstallation.</h4>
+               </div>
+               <p className="clean-text">
+                   Solar energy is a source of clean renewable sourceof energy.
+                   This is achieved when solar 
+                   panels convert sunnlight into
+                   electricity.We connect the solar
+                   panels directly to a power inverter
+                   and then connect it to a home grid
+                   or connect the inverter to a battery,
+                   then to the home power grid.The power 
+                   inverter then converts solar energy 
+                   into energy that is consumable at home.
+                   Power inverters are therefore crucial for safe and efficient operation of solar panels.
+               </p>
+           </article>
+           <article className="clean-services clearfix">
+               <div className="cleaning">
+                   <div className="clean-img-container">
+                 <img src={solar} alt="demonstraion of solar inverters " className="clean-img"/>
+                 </div>
+               </div>
+               
+           </article>
+            </div>
+        </section>
     <MainFooter />
         </>
     );

@@ -4,7 +4,7 @@ import cabling from '../images/cabling.jpg';
 import ethernet from '../images/ethernet.jpg'
 import maintenance from '../images/computermaintenance.jpg';
 import servicing from '../images/servicing.jpg';
-import fence from '../images/electricFence.jpg';
+import fence from '../images/electricfence1.jpg';
 import computer from '../images/comprepair.jpeg'
 import biometric from '../images/biometricsolutions.jpg'
 import '../App.css';
@@ -19,7 +19,7 @@ function SLiderCarousel(){
       src={cabling}
       className="d-block w-100"
       alt="Cables that are structured"
-    />
+          />
     <Carousel.Caption>
       <h3>Structured Cabling.</h3>
       <p>Management and cables organization.</p>
@@ -30,7 +30,6 @@ function SLiderCarousel(){
       src={ethernet}
       className="d-block w-100"
       alt="ethernet cables"
-      
     />
     <Carousel.Caption>
       <h3>Wi-Fi Installation.</h3>
