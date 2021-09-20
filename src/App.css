@@ -1,3 +1,9 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    
+}
 /*navbar styling*/
 /*.bg-myTransparent{
     background: rgba(0,0,0,0.2);
@@ -1331,123 +1337,247 @@ body{
 
 /*equipment styling*/
 
-.equipment_container {
-    width: 100%;
-    padding-top: 40px;
-    margin-bottom:30px;
+.clearfix::after,
+.clearfix::before{
+    content:'';
+    clear:both;
+    display: table;
 }
-
-.equipment_title {
+.main-div{
+    min-height: 100vh;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url("./images/comp1.jpg") center/cover no-repeat fixed;
+    position: relative;
+}
+.banner{
     text-align: center;
-    color: #e67e22;
+    position:absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    letter-spacing: 0.3rem;
+}
+.ict-subtitle{
+    font-size:2rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    color:#e67e22;
+    animation:sliderRight 5s ease-in-out 1;
+}
+.ict-title{
     text-transform: uppercase;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    font-size: 2.3rem;
+    color:#ffff;
+    margin-top:2.5rem;
+    line-height: 1.3;
+    animation:sliderLeft 5s ease-in-out 1;
 }
-
-.equipment_content img {
-    margin-left: auto;
-    margin-right: auto;
-    max-width: 100%;
-    height: auto;
-    display: block;
+@keyframes sliderRight{
+    0%{
+        transform:translateX(1000px);
+    }
+    50%{
+        transform:translateX(-200px);
+    }
+    75%{
+        transform:translateX(50px);
+    }
+    100%{
+        transform:translateX(0);
+    }
 }
+@keyframes sliderLeft {
+    0% {
+        transform: translateX(1000px);
+    }
 
-.equipment_content p {
-    margin-top: 20px;
-    text-align: center;
-    line-height: 1.6;
-    font-size: 1.0em;
-    font-family: sans-serif;
-    color: #9d9d9d;
-    font-weight: 400;
-    margin-bottom: 20px;
+    50% {
+        transform: translateX(-200px);
+    }
+
+    75% {
+        transform: translateX(50px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
 }
-
-.equipment_content p span {
-    color: #d35400;
+.ict-container{
+    height:0.5rem;
+    background:linear-gradient(to left, #ffb76b 0%, #ffa73d 50%, #ff7c00 51%, #ff7f04 100%);
 }
-
-.equipment_content a {
-    color: #000;
+.icts{
+    background:#e5e5e5;
 }
-
-@media screen and (max-width:960px) {
-    .equipment_content p {
-        text-align: center;
-        line-height: 1.6;
-        font-size: 1.0em;
-        font-family: sans-serif;
-        color: #9d9d9d;
-        font-weight: 400;
-        margin-bottom: 20px;
+ .ict{
+    padding:2.5rem 0;
+    text-align:center;
+    transition:all 0.3s linear;
+}
+.ict-icon{
+    font-size: 2.5rem;
+    margin-bottom:1.5rem;
+    transition:all 0.3s linear;
+    display:inline-block;
+}
+.icticon-title{
+    font-size:0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    margin-bottom:1.5rem;
+    color:#d35400;
+    transition:all 0.3s linear;
+}
+.ict-text{
+    line-height:1.5;
+    font-size:16px;
+    max-width:13rem;
+    margin:0 auto;
+}
+.ict:hover{
+    background:#ffa73d;
+}
+.ict:hover .ict-title{
+    color:#ffff;
+}
+.ict:hover .ict-icon{
+    transform:translateY(-5px);
+}
+@media screen and (min-width:576px){
+    .ict{
+        float:left;
+        width:50%;
+    }
+}
+@media screen and (min-width:1200px) {
+    .ict{
+        width:25%;
     }
 }
 /*end of equipment styling*/
 
 /*preventive styling*/
 
-.preventive-container {
-    width: 100%;
-    padding-top: 40px;
+.clearfix::after,
+.clearfix::before {
+    content: '';
+    clear: both;
+    display: table;
 }
 
-.preventive-title {
+.main-section{
+    min-height:100vh;
+    background:linear-gradient(
+    rgba(0,0,0,0.5),
+    rgba(0,0,0,0.5)),
+    url("./images/computermaintenance.jpg") center/cover no-repeat fixed;
+    position:relative;
+}
+.prev-banner {
     text-align: center;
-    line-height: 1.5;
-    letter-spacing: .2rem;
-    color: #e67e22;
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    letter-spacing: 0.3rem;
+}
+.prev-title{
+   text-transform: uppercase;
+   font-size: 1.5rem;
+   color:#ffff;
+   margin-top:2.0rem;
+   margin-bottom:2.0rem;
+   line-height: 1.3;
+}
+.banner-btn{
+    display:inline-block;
+    background:#f39c12;
+    text-decoration:none ;
     text-transform: uppercase;
-    font-size: 1.5rem;
+    padding:0.6rem 1.0rem;
+    color:#222;
+    font-weight:bold;
+    outline: 0.2rem solid #f39c12;
+    outline-offset: 4px;
+    cursor:pointer;
+    transition:all 0.3 linear;
+    top:-50%;
+    left:5%;
+    transform: translate(-50%,5%);
+    position: relative; 
+}
+.banner-btn a{
+    text-decoration:none;
 }
 
-.about-maintenance {
+.prev-icon{
+     font-size: 3.5rem;
+     margin-top:5.5rem;
+     color:#e2eaec;
+     animation:bounce 5s ease-out infinite;
+     display:inline-block;
+     position: absolute;
+}
+@keyframes bounce{
+   100%{transform:rotate(360deg);
+        transform:rotate(-360deg)}
+}
+.mid-section {
+    height: 0.5rem;
+    background: linear-gradient(to left, #ffb76b 0%, #ffa73d 50%, #ff7c00 51%, #ff7f04 100%);
+}
+.maintenance{
+    background:#e2eaec;
+}
+.maintenance-section{
+    padding: 2.5rem 0;
     text-align: center;
-    font-size: 16px;
-    color: #333;
-    font-weight: 500;
-    line-height: 1.6;
-    margin-top:20px;
+    transition: all 0.3s linear;
 }
-
-.contactus-button a {
-    color: white;
-    text-decoration: none;
-}
-
-.contactus-button a:hover {
-    color: #222;
-}
-
-.preventive-container .contactus-button {
-    border: none;
-    background-color: #ff9f1c;
-    padding: 10px 20px;
-    text-align: center;
-    text-decoration: none;
+.maintenance-icon {
+    font-size: 2.5rem;
+    margin-bottom: 1.5rem;
+    transition: all 0.3s linear;
     display: inline-block;
+}
+.icon-title {
+    font-size: 0.9rem;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 0.3rem;
+    margin-bottom: 1.5rem;
+    color: #d35400;
+    transition: all 0.3s linear;
+}
+.maintenance-about {
+    line-height: 1.5;
     font-size: 16px;
-    margin: 5px 7px;
-    cursor: pointer;
-    margin-bottom:20px;
+    max-width: 13rem;
+    margin: 0 auto;
+}
+.maintenance-section:hover {
+    background: #ffa73d;
 }
 
-.image_section {
-    width: 25%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
+.maintenance-section:hover .ict-title {
+    color: #ffff;
 }
 
-.image_section img {
-    width: 100%;
-    height: auto;
+.maintenance-section:hover .maintenance-icon {
+    transform: translateX(-5px);
 }
 
-@media screen and (max-width:960px) {
-    .image_section {
-        width: 75%;
-        margin-left: 50px;
+@media screen and (min-width:576px) {
+    .maintenance-section {
+        float: left;
+        width: 50%;
+    }
+}
+
+@media screen and (min-width:1200px) {
+    .maintenance-section {
+        width: 20%;
     }
 }
 /* end of preventive styling*/

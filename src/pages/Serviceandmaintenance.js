@@ -1,10 +1,11 @@
 import  React from 'react';
 import MainFooter from '../components/mainfooter';
-import equipment from '../images/ict.jpg';
+import MidContainer from '../components/midcontainer';
+import '../App.css';
 import servicing from '../images/servicing.jpg';
 import {FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faPhoneSquare,faWrench} from '@fortawesome/free-solid-svg-icons';
-import computer from '../images/computermaintenance.jpg';
+import {faWrench,
+    faToolbox,faMapMarked,faSpinner, faCogs, faSmile, faCalendarCheck, faComments, faClock, faHandSparkles} from '@fortawesome/free-solid-svg-icons';
 
 export const Serviceandmaintenance = () =>{
     return(
@@ -19,26 +20,61 @@ export const Serviceandmaintenance = () =>{
 export const ICTEquipment = () =>{
     return(
         <>
-        <section className="equipment">
-        <div className="equipment_container">
-            <div className="equipment_content">
-                <h1 className="equipment_title">ICT Equipment and accessories</h1>
-                <img src={equipment} alt=" ict equipments" />
-                <p>We have unlimited<span> supply</span> of any IctEquipment that you might be need of, at a very affordable price.<br />
-                   <span>Installation Services</span> by our able installation team, of the equipment that may need installation.<br />
-                   <span>ICT Support Technicians</span> who provide support for the deployment and maintenance of IctEquipment<br />
-                         and resolutions of technical problems.<br />
-                   <span>Repair</span> of damaged ICT equipments by the technicians on board who are sufficiently<br />
-                         familiar with the equipment and takes all responsible measures to ensure the integrity <br />
-                         of the equipment.
-                         The ICT equipments should be serviced and maintained frequently.<br />
-                         Here in Monjotronic Solutions we do <a href="/Serviceandmaintenance/service">Service</a> and <a href="/serviceandmaintenance/preventivemaintenance">Maintenance</a> of various <br />
-                         ICT equipment which involve taking various steps to achieve great results <br />
-                         that lead to better performance.</p>
-                </div>
+        <header className="main-div">
+            <div className="banner">
+                <h3 className="ict-subtitle">Unlimited supply of</h3>
+                <h2 className="ict-title">Computer Accessories.</h2>
             </div>
-    </section>
-    <MainFooter/>
+        </header>
+          <MidContainer />
+        <div className="ict-container">
+         <section className="icts clearfix">
+           <article className="ict">
+           <span className="ict-icon">
+              <FontAwesomeIcon icon={faToolbox}/> 
+              </span>
+              <h3 className="icticon-title">Repair</h3>
+              <p className="ict-text">
+                  This is done by technicians on board who are sufficiently familiar with the equipment and take all the responsible measures to ensure
+                  integrity of the equipment.
+              </p>
+           </article>
+           <article className="ict">
+            <span className="ict-icon">
+            <FontAwesomeIcon icon={faMapMarked}/>
+            </span>
+          <h3 className="icticon-title">Supply</h3>
+          <p className="ict-text">
+              Visit our shop and get
+              unlimited supply of any Ictequipment
+              that you might need,
+              at a very affordable price.
+          </p>
+           </article>
+           <article className="ict">
+            <span className="ict-icon">
+            <FontAwesomeIcon icon={faSpinner}/>
+            </span>
+          <h3 className="icticon-title">Installation</h3>
+          <p className="ict-text">
+              Installation Services by our own able installation team of the equipment
+              that needs installation.
+          </p>
+           </article>
+           <article className="ict">
+            <span className="ict-icon">
+            <FontAwesomeIcon icon={faCogs}/>
+            </span>
+          <h3 className="icticon-title">Support | Maintenance</h3>
+          <p className="ict-text">
+              Provision of support, by the support technicians for the deployment and Maintenance
+              of equipment that involves taking various steps 
+              that lead to better equipment performance.
+          </p>
+           </article>
+         </section>
+<MainFooter/>
+        </div>
         </>
     );
 };
@@ -46,32 +82,87 @@ export const ICTEquipment = () =>{
 export const PreventiveMaintenance = () =>{
     return(
         <>
-        <div className = "preventive-container">
-            <h1 className="preventive-title">Maintenance</h1>
-            <div className="image_section">
-                <img src={computer} alt="illustrative cogs of preventive maintenance" />
-                
-            </div>
-            <p className="about-maintenance">
-                Regular and routine maintenance of<br /> equipments and assets 
-                is conducted in order keep them<br /> running and prevent 
-                downtime from unexpected equipment failure.<br />
-                We schedule regular maintenance actions aimed at preventions of breakdowns and failures.<br />
-                The goal is to prevent the failure of equipment <br /> caused by dust and other external
-                particles<br />before it actually occurs.<br />It is designed to preserve and enhance 
-                equipment reliability,<br/> which include equipment checks,partial or complete overhauls<br />
-                at specific periods, lubrication for moving parts<br /> like CPU and system fans.
-                Regular and systematic inspection,cleaning and replacement <br /> of worn parts,materials and systems<br />
-                Effective preventive reduces part,material <br /> and system faults and keeps both the <br />
-                software and the hardware in goog working condition.<br />We believe that preventive maintenance <br />
-                can be the key to keeping the computer system <br/> from experiencing serious problems such as <br />
-                data loss and hardware failures and it also<br /> helps the system have a longer life.<br />
-                <i>We are providers of editable maintenance <br />for both electrical and mechanical 
-                equipments and systems.</i>
-            </p>
-            <button className ="contactus-button"><a href="/contactus">< FontAwesomeIcon className="icon" icon={faPhoneSquare}/>&nbsp;Get in touch with us</a></button>
-    </div>
-          <MainFooter/>
+       <header className="main-section">
+           <div className="prev-banner">
+             <h3 className="prev-title">PreventiveMaintenance</h3>
+             <span className="prev-icon">
+                 <FontAwesomeIcon icon={faCogs}/>
+             </span>
+             <a href="/contactus" class="banner-btn">Call Us</a>
+           </div>
+           </header>
+           <div className="mid-section">
+               <section className="maintenance clearfix">
+             <article className="maintenance-section">
+                 <span className="maintenance-icon">
+                     <FontAwesomeIcon icon={faCalendarCheck}/>
+                      </span>
+                <h3 className="icon-title">Regular and Routine</h3>
+                <p className="maintenance-about">
+                  This is conducted on equipments
+                  in order to keep them running and
+                  prevent downtime from unexpected
+                  equipment failure.
+                </p>
+             </article>
+             <article className="maintenance-section">
+                 <span className="maintenance-icon">
+                     <FontAwesomeIcon icon={faClock}/>
+                      </span>
+                <h3 className="icon-title">Schedules</h3>
+                <p className="maintenance-about">
+                 We schedule regular maintenance
+                 actions aimed at prevention of 
+                 breakdowns and failures, with the 
+                 goal of preventing failure of the 
+                 equipment caused by dust and other
+                 external causes,before it occurs.
+                </p>
+             </article>
+             <article className="maintenance-section">
+                 <span className="maintenance-icon">
+                     <FontAwesomeIcon icon={faSmile}/>
+                      </span>
+                <h3 className="icon-title">Benefits</h3>
+                <p className="maintenance-about">
+                  It is designed to preserve and 
+                  enhance equipment reliability 
+                  which include equipment check,
+                  partial or complete overhaul
+                  at specific periods,lubrication
+                  for moving parts like CPU and system fans.
+                  </p>
+             </article>
+             <article className="maintenance-section">
+                 <span className="maintenance-icon">
+                     <FontAwesomeIcon icon={faHandSparkles}/>
+                      </span>
+                <h3 className="icon-title">Systematic Inspection</h3>
+                <p className="maintenance-about">
+                  This is cleaning and replacement of
+                  worn-out parts,materials and systems faults
+                  in-order to keep both the hardware
+                  and the software in a good working condition
+                  for a great user experience with the maintained equipment.
+                </p>
+             </article>
+             <article className="maintenance-section">
+                 <span className="maintenance-icon">
+                     <FontAwesomeIcon icon={faComments}/>
+                      </span>
+                <h3 className="icon-title">Our FeedBack</h3>
+                <p className="maintenance-about">
+                   We believe that preventive maintenance can be the key to keeping the computer system 
+                   from experiencing serious problems such as 
+                   dataloss and hardware failures and 
+                   aids the system functionality for 
+                   a long period of time.We offer editable
+                   maintenance services for both electrical and mechanical equipment and systems.
+                </p>
+             </article>
+             </section>
+             <MainFooter/>
+           </div>
         </>
     );
 };

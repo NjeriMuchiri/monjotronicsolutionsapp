@@ -30,6 +30,7 @@ function SLiderCarousel(){
       src={ethernet}
       className="d-block w-100"
       alt="ethernet cables"
+      
     />
     <Carousel.Caption>
       <h3>Wi-Fi Installation.</h3>
