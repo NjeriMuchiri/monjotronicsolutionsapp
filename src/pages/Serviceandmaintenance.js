@@ -170,25 +170,31 @@ export const PreventiveMaintenance = () =>{
 export const Service = () =>{
     return(
         <>
-        <div class = "service-container">
-     <h2 class="service-title">Service < FontAwesomeIcon className="icon" icon={faWrench}/>
-     </h2>
-     <div class="image_part">
-         <img src={servicing} alt="key illustrating service" />
-     </div>
-     <p class="about-servicing">
-         This is a series of measures and procedures<br />that is done in order to examine<br />
-         an equipment and repair the damaged parts.<br />Servicing is done on all equipment,whether<br />
-         in current operation or for use after storage.<br />For an equipment to stay in good working
-         condition,<br />we encourage regular servicing done, by our able technicians.<br />
-         It is done to ensure required operation efficiency of an equipment.<br />We have
-         a properly organized servicing,<br/>that lowers operating costs as a result of
-         reductions<br />in the possibilities of a breakdown,expensive unplanned repairs,<br />
-         and the cost of planned repairs.<br />This in turn increases the service life of an equipment.
-     </p>
-
-    </div>
-        <MainFooter/>
+         <section className="service-section">
+           <div className="service clearfix">
+               <article className="service-img">
+                   <div className="service-picture-container">
+                       <img src={servicing} alt="service button" className="service-picture" />
+                   </div>
+               </article>
+               <article class="service-info">
+                   <div>
+                       <h3 className="service-title"><FontAwesomeIcon icon={faWrench}/>&nbsp;Servicing.</h3>
+                   </div>
+                   <p className="service-text">
+                       This is a series of measures and procedures that is done in order to examine  an equipment and repair the damaged parts.Servicing is done on all equipment,whether in current operation or for use after storage.For an equipment to stay in good working
+                      condition we encourage regular servicing done, by our able technicians.
+                      </p>
+                      <p className="service-text">
+                      It is done to ensure required operation efficiency of an equipment.We have
+                      a properly organized servicing,that lowers operating costs as a result of
+                      reductions in the possibilities of a breakdown,expensive unplanned repairs,
+                      and the cost of planned repairs.This in turn increases the service life of an equipment.
+                   </p>
+               </article>
+               </div>
+           <MainFooter/>
+         </section>
         </>
     );
 };

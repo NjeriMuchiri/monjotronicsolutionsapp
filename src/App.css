@@ -907,74 +907,76 @@ body{
 
     /*end of structuring cable styling*/
 /* cctv styling*/
-    
-   .cctv-container {
-       width: 100%;
-       padding-top: 40px;
-       margin-bottom:30px;
+    .clearfix::after,
+    .clearfix::before {
+        content: '';
+        clear: both;
+        display: table;
+    }
+    .cctv{
+        background:#272727;
+        margin-top:30px;
+        margin-bottom:30px;
+    }
+   .cctv-info,.cctv-services{
+        padding:2rem 0;
    }
-
-   .cctv-container .cctv-title {
-       font-size: 20px;
-       color: #e67e22;
-       line-height: 1.6;
-       text-align: center;
+   .cctv-title .text-heading{
+       color:#e67e22;
        text-transform: uppercase;
-       margin-top: 30px;
-       padding-bottom: 10px;
-       -webkit-transition: all .3s ease-out;
-       -o-transition: all .3s ease-out;
-       -moz-transition: all .3s ease-out;
-       transition: all .3s ease-out;
+       font-size:18px;
+       letter-spacing: 0.3rem;
    }
-
-   .cctv-container .cctv-title:hover {
-       cursor: pointer;
+   .cctv-text{
+       color:#ccc;
+       margin:1rem 0;
+       max-width:26rem;
    }
-
-   .photo-section {
-       float: none;
-       width: 20%;
-       margin-right: auto;
-       margin-left: auto;
+   .services{
+       padding:2rem 0;
    }
-
-   .photo-section img {
-       width: 100%;
-       height: auto;
+   .cctv-img{
+       width:100%;
+       display:block;
+       border-radius: 0.4rem;
+       margin-bottom: 2rem;
    }
-
-   .cctv-content p {
-       text-align: center;
-       line-height: 1.5;
-       letter-spacing: 1;
-       font-size: small;
-       color: #343a40;
-       font-weight: 500;
-       font-size: 15px;
-       line-height: 1.9em;
+   .cctv-subtitle{
+       color:#e67e22;
+       font-size:1rem;
+       text-transform: uppercase;
+       letter-spacing: 0.3rem;
+       margin-bottom:0.6rem;
    }
-
-   @media screen and (max-width:900px) {
-       .cctv-container {
-           width: 100%;
-           padding-top: 40px;
+   @media screen and (min-width:768px) {
+       .cctv-info{
+           padding:2rem 1rem;
        }
-
-       .cctv-container .cctv-title {
-           text-align: center;
-       }
-
-       p {
-           padding-right: 20px;
-       }
-
-       .photo-section {
-           width: 55%;
-           margin-left: 100px;
+       .services{
+           float:left;
+           width:50%;
+           padding:2rem 1rem;
        }
    }
-
+   @media screen and (min-width:992px) {
+       .services{
+           width:33.3%;
+       }
+   }
+   @media screen and (min-width:1200px){
+       .cctv-info{
+           float:left;
+           width:30%;
+       }
+       .cctv-services{
+           float:left;
+           width:70%;
+       }
+       .services{
+           padding:1.5rem 1rem 0 1rem;
+           width:33.3%;
+       }
+   }
 /* end of cctv styling*/
 
 /* Access styling*/
@@ -1112,227 +1114,137 @@ body{
 
 /*fence styling*/
 
-.ElectricFence-Container {
-    width: 100%;
-    padding-top: 40px;
-    margin-bottom: 10px;
+.clearfix::after,
+.clearfix::before {
+    content: '';
+    clear: both;
+    display: table;
 }
-
-.Fence-title {
-    color: #e67e22;
-    font-size: 18px;
-    letter-spacing: 1px;
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 40px;
-    font-weight: 400;
-    text-transform: uppercase;
-    font-family: monospace;
-    letter-spacing: 1px;
-    -webkit-transition: all .3s ease-out;
-    -o-transition: all .3s ease-out;
-    -moz-transition: all .3s ease-out;
-    transition: all .3s ease-out;
-}
-
-.Fence-title:hover {
-    font-size: 20px;
-
-}
-
-.Fence-content h4 {
-    font-size: 16px;
-    font-family: sans-serif;
-    text-align: center;
-    font-weight: 300;
-    color: darkslategrey;
-    letter-spacing: 1.5px;
-    padding-bottom: 30px;
-}
-
-.photo-group {
-    width: 25%;
-    height: auto;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.photo-group img {
-    width: 100%;
-    height: auto;
-}
-
-.Fence-content p {
-    margin-top: 20px;
-    font-size: 15px;
-    text-align: center;
-    color: #343a40;
-    line-height: 1.6;
-    letter-spacing: .6px;
-}
-
-.Fence-content .button {
-    margin-top: 40px;
-    text-align: center;
-    padding-bottom: 30px;
-}
-
-.Fence-content .button a {
-    padding: 8px 25px;
-}
-
-.Fence-content .button {
-    width: 100%;
-    margin-top: 25px;
-}
-
-.Fence-content .button a {
-    color: #fff;
-    background-color: #e67e22;
-    padding: 12px 35px;
-    text-decoration: none;
-    letter-spacing: 1px;
-    font-size: 17px;
-    -webkit-transition: all .3s ease-in;
-    -o-transition: all .3s ease-in;
-    -moz-transition: all .3s ease-in;
-    transition: all .3s ease-in;
-}
-
-.Fence-content .button a:hover {
-    color: black;
-}
-
-@media screen and (max-width:900px) {
-    .ElectricFence-Container {
-        width: 100%;
-        padding-top: 40px;
-        margin-bottom:10px;
-    }
-
-    .Fence-title {
-        color: #e67e22;
-        font-size: 20px;
-        letter-spacing: 1px;
-        text-align: center;
-        padding-bottom: 40px;
-        font-weight: 400;
-        text-transform: uppercase;
-        font-family: monospace;
-        letter-spacing: 1px;
-    }
-
-    .Fence-content h3 {
-        font-size: 16px;
-        font-family: cursive;
-        text-align: center;
-        font-weight: 300;
-        color: darkslategrey;
-        letter-spacing: 1.5px;
-        padding-bottom: 30px;
-    }
-
-    .photo-group {
-        width: 75%;
-        margin-left: 50px;
-    }
-
-    .Fence-content p {
-        font-size: 15px;
-        text-align: center;
-        color: #343a40;
-        margin-left: 30px;
-    }
-
-    .button {
-        padding-right: 50px;
-    }
-}
-/*end of fencestyling*/
-
-/*cleanpower styling*/
-    
-.cleanpower-container {
-    width: 100%;
-    padding-top: 40px;
-    margin-bottom: 20px;
-}
-
-.clean-class {
-    padding-left: 650px;
-
-}
-
-.clean-class a {
-    text-transform: uppercase;
-    color: #464545;
-    font-weight: 900;
-    -webkit-transition: all .3s ease;
-    -o-transition: all .3s ease;
-    -moz-transition: all .3s ease;
-    transition: all .3s ease;
-}
-
-.clean-class a:hover {
-    color: #000;
-}
-
-.cleanpower-title {
-    text-align: center;
-    color: #fb8500;
-    text-transform: uppercase;
-    font-family: sans-serif;
-    font-size: 20px;
-    font-weight: 400;
+.fence {
+    background: #272727;
     margin-top: 30px;
     margin-bottom: 30px;
 }
 
-.section-image {
-    width: 25%;
-    margin-left: auto;
-    margin-right: auto;
+.fence-info,
+.fence-services {
+    padding: 2rem 0;
 }
 
-.cleanpower-content img {
-    max-width: 100%;
-    height: auto;
-    border-radius: 8px;
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    position: relative;
+.fence-title .fence-heading {
+    color: #e67e22;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 0.3rem;
+    margin-left: 15px;
 }
 
-.cleanpower-content p {
-    font-size: 16px;
-    margin-top: 20px;
-    font-size: 15px;
-    text-align: center;
-    color: #343a40;
-    line-height: 1.6;
+.fence-text {
+    color: #ccc;
+    margin: 1rem 0;
+    max-width: 26rem;
+    margin-left: 20px;
+    letter-spacing: 0.1rem;
+    line-height: 1.5;
 }
 
-@media screen and (max-width:900px) {
-    .section-image {
-        width: 75%;
-        margin-left: 50px;
-        padding-bottom: 10px;
+.fencing {
+    margin:40px;
+    width:80vw;
+    height:40vh;
+    border:5px solid coral;
+    position:relative;
+}
+
+.fence-img {
+    height:150px;
+    width:150px;
+    position:absolute;
+}
+#one {
+    top: 0;
+    left: 0;
+    z-index: 3;
+}
+
+#two {
+    top: 10%;
+    left: 35%;
+    z-index: 2;
+}
+
+#three {
+    top: 30%;
+    left: 55%;
+    z-index: 1;
+}
+
+@media screen and (min-width:768px) {
+    .fence-info {
+        padding: 2rem 1rem;
     }
 
-    .clean-class {
-        padding-left: 100px;
-    }
+    .fencing {
+        float: left;
+        width: 50%;
+        padding: 2rem 1rem;
+        height:50vh;
 
-    .cleanpower-content p {
-        padding-bottom: 10px;
-        font-size: 15px;
-        text-align: center;
-        color: #343a40;
-        margin-left: 20px;
+    }
+     #one {
+         top: 0;
+         left: 0;
+         z-index: 3;
+     }
+
+     #two {
+         top: 10%;
+         left: 35%;
+         z-index: 2;
+     }
+
+     #three {
+         top: 47.3%;
+         left: 50.6%;
+         z-index: 1;
+     }
+}
+
+@media screen and (min-width:992px) {
+    .fencing {
+        width: 50%;
     }
 }
+
+@media screen and (min-width:1200px) {
+    .fence-info {
+        float: left;
+        width: 30%;
+    }
+
+    .fence-services {
+        float: left;
+        width: 70%;
+    }
+
+    .fencing {
+        padding: 1.5rem 1rem 0 1rem;
+        width: 33.3%;
+    }
+}
+
+
+/*end of fencestyling*/
+
+/*cleanpower styling*/
+    .clearfix::after,
+    .clearfix::before {
+        content: '';
+        clear: both;
+        display: table;
+    }
+    
+
 /*end of cleanpower styling*/
 
 /*equipment styling*/
@@ -1407,7 +1319,8 @@ body{
     background:linear-gradient(to left, #ffb76b 0%, #ffa73d 50%, #ff7c00 51%, #ff7f04 100%);
 }
 .icts{
-    background:#e5e5e5;
+    background:#e5e5e5;   
+    
 }
  .ict{
     padding:2.5rem 0;
@@ -1493,7 +1406,7 @@ body{
 .banner-btn{
     display:inline-block;
     background:#f39c12;
-    text-decoration:none ;
+    text-decoration:none !important;
     text-transform: uppercase;
     padding:0.6rem 1.0rem;
     color:#222;
@@ -1506,11 +1419,21 @@ body{
     left:5%;
     transform: translate(-50%,5%);
     position: relative; 
+    animation:grow 5s ease-in-out 1;
 }
-.banner-btn a{
-    text-decoration:none;
+.banner-btn:hover{
+    color:black;
 }
-
+@keyframes grow{
+    0%{
+        transform: scale(2);
+        opacity:0;
+    }
+    100%{
+        transform:scale(1);
+        opacity:1;
+    }
+}
 .prev-icon{
      font-size: 3.5rem;
      margin-top:5.5rem;
@@ -1583,49 +1506,58 @@ body{
 /* end of preventive styling*/
 
 /*service styling*/
-
-.service-container {
-    width: 100%;
-    padding-top: 40px;
+.clearfix::after,
+.clearfix::before {
+    content: '';
+    clear: both;
+    display: table;
 }
-
-.service-container .service-title {
+.service-section{
+    min-height:100vh;
+}
+.service{
+    padding:4rem 0;
+    width:80vw;
+    margin:0 auto;
+    max-width:1170px;
+}
+.service-img,
+.service-info{
+   padding:2rem 0;
+}
+.service-picture-container{
+    background:#f39c12;
+    border:0.5rem solid #f39c12;
+    border-radius: 1rem;
+    overflow:hidden;
+}
+.service-picture{
+    width:100%;
+    display:block;
+    transition:all 0.3s linear;
+}
+.service-picture-container:hover .service-picture{
+    opacity:0.5;
+    transform:scale(1.4);
+}
+.service-title{
+    font-size:2rem;
     text-transform: uppercase;
-    color: #e67e22;
-    font-size: 25px;
-    text-align: center;
-    margin-top: 20px;
-    margin-bottom: 20px;
-    letter-spacing: .3rem;
+    letter-spacing: 0.3rem;
+    color:#ff8800;
 }
-
-.about-servicing {
-    text-align: center;
-    font-size: 16px;
-    color: #333;
-    font-weight: 500;
-    line-height: 1.6;
-    letter-spacing: .6px;
-    margin-top:20px;
-    margin-bottom: 20px;
+.service-text{
+    margin:1rem 0;
+    max-width:26rem;
 }
-
-.image_part {
-    width: 35%;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.image_part img {
-    width: 100%;
-    height: auto;
-}
-
-@media screen and (max-width:900px) {
-    .image_part {
-        width: 75%;
-        margin-left: 50px;
-
+@media screen and (min-width:992px){
+    .service{
+        width:95vw;
+    }
+    .service-img,.service-info{
+        float:left;
+        width:50%;
+        padding:2rem;
     }
 }
 

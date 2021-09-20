@@ -1,13 +1,16 @@
 import React from 'react';
 import {FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {faUserCog,faPhoneSquare} from '@fortawesome/free-solid-svg-icons';
-import camera from "../images/ipcamera.jpg";
+import {faUserCog} from '@fortawesome/free-solid-svg-icons';
+import camera from "../images/ipcamera.jpeg";
+import backup from "../images/backup.jpeg"
 import cctv from "../images/cctv1.jpg";
 import MainFooter from '../components/mainfooter';
 import office from '../images/officeaccess.jpeg';
 import biometric from '../images/biometricsolutions.jpg';
 import door from '../images/magneticlock.jpg';
 import fence from '../images/electricFence.jpg';
+import fencing from '../images/fence3.jpeg';
+import electric from '../images/electricfence1.jpg';
 import videodoor from '../images/videodoor.jpg';
 import panel from '../images/offgridsolar.jpg';
 import '../App.css';
@@ -26,32 +29,40 @@ export const Security = () =>{
 export const Cctv = () =>{
     return(
         <>
-       <section className="cctv">
-      <div className="cctv-container">
-          <h1 className="cctv-title">CCTV-Surveillance</h1>
-          <div className="cctv-content">
-              <p>At Monjotronic Solutions,we offer a complete range of Surveillance solutions<br/>
-                  from leading manufucturers including DVR systems,a wide range of Cameras<br/>
-                  such as IP cameras,HD cameras,Dome cameras,PTZ cameras,bullet cameras<br /> and the requisite 
-                  end to end installation services.
-              </p>
-              <div class="photo-section">
-                  <img src={camera} alt="cctvcamera" /> 
-              </div>
-              <div class="cctv-bottom">
-                  <p>
-                      Qualified Technicians are available and well positioned to advice<br/>
-                      on identifying suitable hardware based on the requirements <br/>and 
-                      oversee proper installation to achieve quality images <br/> and correct backup options.
-                  </p>
-                  <div class="photo-section">
-                  <img src={cctv} alt="cctvfootage" />
-              </div>
-                </div>
-          </div>
-
-      </div>
-    </section>
+      <section class="cctv">
+        <div class="cctv-section clearfix">
+         <article className="cctv-info">
+             <div className="cctv-title">
+                 <h3 className="text-heading">Cctv installation</h3>
+                 </div>
+                 <p className="cctv-text">
+                     At Monjotronic Solutions,we offer complete range of Surveillance solutions
+                    from leading manufucturers including DVR systems,a wide range of Cameras
+                     such as IP cameras,HD cameras,Dome cameras,PTZ cameras,bullet cameras and the requisite end to end installation services.
+                 </p>
+                 <p className="cctv-text">
+                      Qualified Technicians are available and well positioned to advice
+                      on identifying suitable hardware based on the requirements and 
+                      oversee proper installation to achieve quality images and correct backup options.
+                 </p>
+    
+         </article>
+           <article className="cctv-services clearfix">
+             <div class="services">
+                 <img src= {camera} alt="cctv camera" class="cctv-img" />
+                 <h3 className="cctv-subtitle">CameraRange</h3>
+             </div>
+             <div class="services">
+                 <img src= {cctv} alt="cctv camera" class="cctv-img" />
+                 <h3 className="cctv-subtitle">Footage</h3>
+             </div>
+             <div class="services">
+                 <img src= {backup} alt="cctv camera" class="cctv-img" />
+                 <h3 className="cctv-subtitle">BackupOptions</h3>
+             </div>
+           </article>
+        </div>
+      </section>
     <MainFooter/>
         </>
     );
@@ -103,30 +114,29 @@ export const AccessControl = () =>{
 export const ElectricFence = () =>{
     return(
         <>
-         <section class="Electric-Fence">
-    <div class="ElectricFence-Container">
+         <section className="fence">
+             <div className="fence-section clearfix">
+               <article className="fence-info">
+                   <div className="fence-title">
+                <h3 className="fence-heading">electricfence installation.</h3>
+                   </div>
+                   <p className="fence-text">
+                      We as Monjotronic Solutions install electric fences inorder to defeat insecurity at homes or working places and promote safe environments. Installation is at an affordable price
+                      and we come bearing the equipments needed to install the electric fence.
+                     We charge both for cost of labour and the equipments used.We have qualified technicians to satistfy the needs you want as a client. We also do electric fence maintenance if at all its needed and keep the electric fence in a good state.Happy and qualified technicians ready to serve you at your needs.
+                   </p>
+               </article>
+               <article className="fence-services clearfix">
+               <div className="fencing">
+                   <img src= {fence} alt="electric wire fence" id="one" className="fence-img" />
+                    <img src= {fencing} alt="electric wire fence" id="two" class="fence-img" />
+                     <img src= {electric} alt="electric wire fence" id="three" class="fence-img" />
+                 
+               </div>
+               </article>
+             </div>
 
-    <h1 class="Fence-title">ElectricFence Installation</h1>
-    <div class="Fence-content">
-        <h4> Installation of electric fence for security purposes.</h4>
-        <div class="photo-group">
-            <img src={fence} alt="electric fence sample" width="30%" height="50%" />
-        </div>
-        <p>
-            We as Monjotronic Solutions install electric fences inorder to defeat insecurity at homes<br />
-            or working places and promote safety environments. Installation is at an affordable price <br/>
-            and we come bearing the equipments needed to install the electric fence.<br />
-            We charge both for cost of labour and the equipments used.<br />We have qualified technicians to satistfy<br />
-            the needs you want as a client.<br />
-            We also do electric fence maintenance if at all its needed and keep the electric fence in a good state.<br />
-            Happy and qualified technicians ready to serve you at your needs.
-        </p>
-        <div class="button">
-            <a href="/contactus">< FontAwesomeIcon className="icon" icon={faPhoneSquare}/>&nbsp;Contact Us</a>
-            </div>
-</div>
-    </div>
-    </section>
+         </section>
     <MainFooter />
         </>
     );
@@ -135,26 +145,7 @@ export const ElectricFence = () =>{
 export const CleanPowerInstallation = () =>{
     return(
         <>
-       <section className="cleanpower">
-        <div className="cleanpower-container">
-            <h1 className="cleanpower-title">CleanPower Installation</h1>
-            <div className="cleanpower-content">
-                <div className="section-image">
-                <img src={panel} alt="solarpanels" />
-                </div>
-            <p>Solar energy is a source of clean renewable source of energy. <br />Solar panels convert sunlight into electric energy.<br />
-               We connect the solar panels directly to a power inverter<br /> and then connect it to a home grid <br/> or connect the inverter to the battery <br />
-               and then to the home power grid.<br />The power inverter then converts the solar energy <br /> into energy that is consumable at home.<br /> Power inverters 
-               are crucial for safe and efficient operation of solar panels.<br />We encourage solar panels installation,<br />since solar energy can act as a backup,<br /> so you don't 
-               have to worry about power outage.<br />Maintenance being the key to sustaining a strong,<br />properly functioning,efficient and effective structure.<br />
-               After installation,we schedule maintenance actions<br /> aimed at prevention of breakdown and failure of the solar panels.<br />Since insufficient care of solar panels
-               <br />can reduce the amount of energy generated by the panels.<br />The most vital component of solar panel care<br />is to keep the panels clean since a solar panel<br />
-               need to absorb energy from the sun.<br /> Our goal is to prevent the failure of the panels <br />
-               caused by dust and other external particles before it actually occurs.<br /></p>
-            </div>
-       
-        </div>
-    </section>
+      
     <MainFooter />
         </>
     );
