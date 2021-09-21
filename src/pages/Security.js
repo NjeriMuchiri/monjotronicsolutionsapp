@@ -48,11 +48,11 @@ export const Cctv = () =>{
     
          </article>
            <article className="cctv-services clearfix">
-             <div class="services">
+             <div className="services">
                  <img src= {camera} alt="cctv camera" class="cctv-img" />
                  <h3 className="cctv-subtitle">CameraRange</h3>
              </div>
-             <div class="services">
+             <div className="services">
                  <img src= {cctv} alt="cctv camera" class="cctv-img" />
                  <h3 className="cctv-subtitle">Footage</h3>
              </div>
