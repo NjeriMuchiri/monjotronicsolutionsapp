@@ -14,11 +14,11 @@ const Navigationbar = () =>{
    return(
 <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
   <Container>
-    <Navbar.Brand href="/Home"><img src={logo} alt="A company logo"style={{width:"160px"}} /></Navbar.Brand>
+    <Navbar.Brand href="/"><img src={logo} alt="A company logo"style={{width:"160px"}} /></Navbar.Brand>
     <Navbar.Toggle aria-controls="basic-navbar-nav" />
     <Navbar.Collapse id="basic-navbar-nav">
       <Nav className="mx-auto">
-        <Nav.Link href="/Home">< FontAwesomeIcon icon={faHome}/> &nbsp;Home</Nav.Link>
+        <Nav.Link href="/">< FontAwesomeIcon icon={faHome}/> &nbsp;Home</Nav.Link>
           
            <NavDropdown  title="Networking" id="basic-nav-dropdown">
           <NavDropdown.Item href="/Networking/LanWlan">LanWlan</NavDropdown.Item>

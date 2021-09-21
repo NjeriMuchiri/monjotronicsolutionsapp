@@ -14,7 +14,7 @@ return(
    <Router>
 	   <NavigationBar/>
 	<Switch>
-		<Route path="/Home" exact component={Home} />
+		<Route path="/" exact component={Home} />
 		<Route path="/Networking" exact component={Networking}/>
         <Route path="/Networking/LanWlan"  component={LanWlan} />
 		<Route path="/Networking/StructuredCabling"  component={StructuredCabling} />

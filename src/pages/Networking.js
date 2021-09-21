@@ -58,7 +58,7 @@ export const LanWlan=()=>{
                      </div>
                      <div className="net-package lan-image-container">
                         <h3 className="wlan-textheading">
-                           Our Internet Package:
+                           Our Internet Packages:
                        </h3>
                         <img src={netpackage} alt="our internet packages"className="lan-image" />
                      </div>

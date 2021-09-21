@@ -714,13 +714,18 @@ body{
         margin-top: 2.5rem;
         letter-spacing: 0.3rem;
         line-height: 1.3;
-        font-weight: bold;;
+        font-weight: bold;
+        margin-bottom: 80px;
     }
     .wlan-about{
         font-size:16px;
         color:#efefef;
         letter-spacing:0.2rem;
         line-height:1.5;
+    }
+    .wlan-about::first-letter{
+        text-transform: uppercase;
+        text-indent:50px;
     }
     .wlan {
         background: #272727;
@@ -832,7 +837,7 @@ body{
             width: 33.3%;
         }
         .net-package{
-            padding:0rem 0.2rem 0 0.25rem;
+            padding:1.5rem 1rem 0 1rem;
         }
     }
     
